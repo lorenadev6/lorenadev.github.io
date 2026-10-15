@@ -248,3 +248,54 @@ footer p {
     }
 }
 
+
+/* Botones de contacto */
+
+.kontakt-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.kontakt-links a {
+    display: inline-block;
+    background-color: #0f766e;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s,
+                transform 0.3s;
+}
+
+.kontakt-links a:hover {
+    background-color: #115e59;
+    transform: translateY(-3px);
+}
+
+/* Iconos de contacto */
+
+.kontakt-links a i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/* Selector de idiomas */
+
+nav a[lang] {
+    color: #0f766e;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+nav a[aria-current="page"] {
+    background-color: #ccfbf1;
+    color: #115e59;
+}
+
+nav a[lang]:hover {
+    background-color: #e2e8f0;
+}
