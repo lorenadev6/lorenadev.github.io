@@ -301,3 +301,30 @@ nav a[aria-current="page"] {
 nav a[lang]:hover {
     background-color: #e2e8f0;
 }
+/* Corrección de la imagen de Aula Circular */
+
+.projekt-karte {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    overflow: hidden;
+}
+
+.projekt-imagen {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.projekt-imagen img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.projekt-inhalt {
+    width: 100%;
+    min-width: 0;
+}
