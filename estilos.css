@@ -171,7 +171,8 @@ footer p {
 
 .projekt-karte {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 25px;
     padding: 30px;
     margin-top: 30px;
     border: 1px solid #e2e8f0;
@@ -179,16 +180,18 @@ footer p {
     background-color: #f8fafc;
 }
 
-.projekt-symbol {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 110px;
-    height: 110px;
-    background-color: #ccfbf1;
-    border-radius: 14px;
-    font-size: 3rem;
+.projekt-imagen {
+    width: 100%;
+    text-align: center;
+}
+
+.projekt-bild {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
 }
 
 .projekt-inhalt {
@@ -234,17 +237,16 @@ footer p {
 
 /* Proyectos en dispositivos móviles */
 
+
 @media (max-width: 600px) {
     .projekt-karte {
-        flex-direction: column;
-        padding: 20px;
+        padding: 15px;
         gap: 20px;
     }
 
-    .projekt-symbol {
-        width: 80px;
-        height: 80px;
-        font-size: 2.2rem;
+    .projekt-bild {
+        width: 100%;
+        height: auto;
     }
 }
 
